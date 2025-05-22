@@ -84,6 +84,7 @@
   .home-card-title,
   .home-card-text {
     text-align: center;
+    
     align-self: center;
   }
 @media (max-width: 768px) {

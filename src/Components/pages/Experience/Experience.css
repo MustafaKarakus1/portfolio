@@ -1,15 +1,19 @@
 .scroll-list__wrp {
   width: 100%;
+  max-width: 1200px;
   height: 700px;
-  overflow: auto;
-  padding: 50px;
+  overflow-y: auto;
+  padding: 50px 20px; /* Yatay padding küçültüldü */
+  margin: 0 auto;
   border-radius: 8px;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-        display: none;
-        }        
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scroll-list__wrp::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .item {
@@ -19,5 +23,28 @@
   border-radius: 10px;
   color: white;
   font-size: 1.5rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Mobil için ayarlar */
+@media (max-width: 768px) {
+  .scroll-list__wrp {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .item {
+    padding: 20px;
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    font-size: 1rem;
+    padding: 15px;
+  }
 }

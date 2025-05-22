@@ -12,7 +12,7 @@ const Education = () => {
             src={tedu}
             alt="Education"
             className="img-fluid rounded shadow"
-            style={{ height:"220px",maxHeight: '250px' }}
+            style={{ height:"400px" }}
           />
         </div>
         <div className="col-md-8">
