@@ -1,0 +1,98 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #16253a;
+    margin-bottom: 1vh;
+}
+
+.card {
+  position: relative;
+}
+
+.home-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-card {
+  position: relative;
+  border: none;
+
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-overlay {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30vh;  
+  align-items: flex-end;   
+  height: 100%;
+  color: white;
+  padding-left: 40px; 
+
+}
+
+.home-card-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  color: white;
+}
+
+.home-card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: right;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px 10px;
+  }
+
+  .card-img {
+    height: 60vh;
+  }
+
+  .home-overlay {
+    padding-top: 15vh;
+    padding-left: 20px;
+    align-items: flex-end;
+  }
+
+  .home-card-text {
+    font-size: 1.5rem;
+  }
+
+  .home-card-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-card-title,
+  .home-card-text {
+    text-align: center;
+    align-self: center;
+  }
+@media (max-width: 768px) {
+  .card-img {
+    height: 40vh; /* Ekranın yarısı kadar yap */
+  }
+}
+
+  .home-overlay {
+    align-items: center;
+  }
+}

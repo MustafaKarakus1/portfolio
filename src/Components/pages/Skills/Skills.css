@@ -1,0 +1,174 @@
+.skills {
+    width: 100%;
+    padding-top: 1vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
+}
+
+.skills-heading{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-row {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+    width: calc(320px * 12); 
+}
+
+.skills-col {
+    flex: 0 0 300px;
+    min-width: 300px;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.skills-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    height: 100%;
+    border-color: #132654;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s;
+    width:auto;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+}
+
+.skills-card-img {
+    width: 50%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.skills-card-body {
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+.skills-card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.skills-card-text {
+    margin-bottom: 0;
+}
+
+/* Sonsuz scroll animasyonu */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-320px * 6)); /* İlk set kartların toplam genişliği */
+    }
+}
+
+
+/* Hız varyasyonları */
+.skills-row.fast {
+    animation-duration: 30s;
+}
+
+.skills-row.slow {
+    animation-duration: 30s;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .skills-col {
+        flex: 0 0 250px;
+        min-width: 250px;
+        max-width: 250px;
+        margin-right: 15px;
+    }
+    
+    .skills-row {
+        width: calc(265px * 12); /* Mobil için yeniden hesapla */
+        animation-duration: 25s;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-265px * 6));
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-col {
+        flex: 0 0 200px;
+        min-width: 200px;
+        max-width: 200px;
+        margin-right: 15px;
+    }
+    
+    .skills-row {
+        width: calc(215px * 12);
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-215px * 6));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .skills-col {
+    flex: 0 0 200px;
+    min-width: 200px;
+    max-width: 200px;
+    margin-right: 10px;
+  }
+
+  .skills-row {
+    width: calc(215px * 12);
+    animation-duration: 25s;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-215px * 6));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-heading {
+    font-size: 1.6rem;
+  }
+}

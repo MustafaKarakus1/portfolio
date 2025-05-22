@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .contact-item {
+    width: 120px;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .contact-item h3 {
+    font-size: 11px;
+  }
+
+  .contact-item p {
+    font-size: 13px;
+  }
+}
