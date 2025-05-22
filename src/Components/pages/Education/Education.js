@@ -1,7 +1,6 @@
 import React from 'react';
 import tedu from '../../Assets/tedu.jpeg'; // kendi logo yoluna göre değiştir
 import './Education.css'; // opsiyonel stil dosyası
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Education = () => {
   return (
