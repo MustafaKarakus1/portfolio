@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/pages/Home/Home';
 import About from './Components/pages/About/About';
