@@ -31,22 +31,22 @@
     height: 40vh;
     border-radius: 50%;
     margin-bottom: 4vh;
-    box-shadow: 0 0 20px #29ccc4,
-                0 0 40px #29ccc4,
-                0 0 60px #29ccc4;
+    box-shadow: 0 0 20px #5aa6a6,
+                0 0 40px #5aa6a6,
+                0 0 60px #5aa6a6;
     animation: neonPulse 2s ease-in-out infinite alternate;
 }
 
 @keyframes neonPulse {
     from {
-        box-shadow: 0 0 20px #29ccc4,
-                    0 0 40px #29ccc4,
-                    0 0 50px #29ccc4;
+        box-shadow: 0 0 20px #5aa6a6,
+                    0 0 40px #5aa6a6,
+                    0 0 50px #5aa6a6;
     }
     to {
-        box-shadow: 0 0 10px #29ccc4,
-                    0 0 20px #29ccc4,
-                    0 0 30px #29ccc4;
+        box-shadow: 0 0 10px #5aa6a6,
+                    0 0 20px #5aa6a6,
+                    0 0 30px #5aa6a6;
     }
 }
 

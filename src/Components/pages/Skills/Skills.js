@@ -17,7 +17,7 @@ const Skills = () => {
   const repeatedSkills = [...skillsData, ...skillsData];
 
   return (
-    <div className="skills">
+    <div className="skills" id='skills'>
       <h1 className="skills-heading">Skills</h1>
       <div className="skills-row">
         {repeatedSkills.map((imageSrc, index) => (

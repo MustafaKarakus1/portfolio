@@ -35,7 +35,7 @@ const Experience = () => {
 
   return (
     
-    <div className="scroll-list__wrp" ref={scrollListRef}>
+    <div className="scroll-list__wrp" ref={scrollListRef} id='experience'>
       <h1 style={{ textAlign:"center", color:"white"}}>Experience</h1>
       <div className="item">Türk Havacılık ve Uzay Sanayii A.Ş.</div>
       <div className="item">Kapsül Teknoloji Platformu</div>

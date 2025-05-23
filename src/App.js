@@ -1,3 +1,4 @@
+import "./App.css";
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/pages/Home/Home';
 import About from './Components/pages/About/About';
@@ -8,7 +9,7 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: ' #16253a' }}>
+    <div className="App">
       <Navbar />
       <Home />
       <About />

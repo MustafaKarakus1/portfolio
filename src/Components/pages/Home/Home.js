@@ -1,12 +1,12 @@
 import React from 'react';
-import home from '../../Assets/home.png';
+import home1 from '../../Assets/home1.png';
 import './Home.css'; 
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home' id='home'>
         <div className="card text-bg-dark custom-card">
-        <img src={home} className="card-img" alt="Logo" />
+        <img src={home1} className="card-img" alt="Logo" />
         <div className="home-img-overlay home-overlay">
             <h5 className="home-card-title">Hi, I'm Mustafa Karakuş</h5>
             <p className="home-card-text">Software Engineer</p>

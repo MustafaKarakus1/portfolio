@@ -4,7 +4,7 @@ import './Education.css'; // opsiyonel stil dosyası
 
 const Education = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5" id='education'>
       <h1 className="text-center mb-4">Education</h1>
       <div className="row ">
         <div className="col-md-4 ">
