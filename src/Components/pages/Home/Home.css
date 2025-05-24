@@ -42,8 +42,8 @@
 .home-card-text {
   font-size: 2rem;
   font-weight: bold;
-  text-align: right;
-  align-items: center;
+  /*text-align: right;
+  align-items: center;*/
   color: white;
   margin: 0;
   display: flex;
@@ -55,7 +55,7 @@
 
 .home-card-text > .static-text {
   color: white;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .home-card-text > .animated-words {
@@ -63,7 +63,7 @@
   height: 2.8rem;
   overflow: hidden;
   color: turquoise;
-  width: 15rem; /* genişlik veriyoruz hizalama için */
+  width: 12rem; 
   text-align: left;
 }
 
