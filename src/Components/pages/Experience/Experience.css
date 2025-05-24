@@ -23,12 +23,12 @@
   border-radius: 10px;
   color: white;
   font-size: 1.5rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  /*transition: transform 0.3s ease, opacity 0.3s ease;*/
   box-sizing: border-box;
   width: 100%;
 }
 
-/* Mobil için ayarlar */
+
 @media (max-width: 768px) {
   .scroll-list__wrp {
     height: auto;
@@ -38,7 +38,7 @@
   .item {
     padding: 20px;
     font-size: 1.1rem;
-    margin: 15px 0;
+    transition: none;
   }
 }
 

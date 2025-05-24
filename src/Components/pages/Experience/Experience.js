@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './Experience.css'
 
 const Experience = () => {
-  const scrollListRef = useRef(null);
+  /*const scrollListRef = useRef(null);
 
   useEffect(() => {
     const scrollList = scrollListRef.current;
@@ -31,18 +31,37 @@ const Experience = () => {
     return () => {
       scrollList.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []);*/
 
   return (
-    
-    <div className="scroll-list__wrp" ref={scrollListRef} id='experience'>
-      <h1 style={{ textAlign:"center", color:"white"}}>Experience</h1>
-      <div className="item">Türk Havacılık ve Uzay Sanayii A.Ş.</div>
-      <div className="item">Kapsül Teknoloji Platformu</div>
-      <div className="item">Türk Havacılık ve Uzay Sanayii A.Ş.</div>
-      <div className="item">T.C. Ulaştırma ve Altyapı Bakanlığı</div>
-      <div className="item">Etiya Bilgi Teknolojileri</div>
-      <div className="item">Kapsül Teknoloji Platformu</div>
+    <div>
+    <h1 style={{ textAlign:"center", color:"white"}} id='experience'>Experience</h1>
+    <div className="scroll-list__wrp" /*ref={scrollListRef}*/ >
+      <div className="item" style={{display:"flex",justifyContent:"space-between"}} >
+        <span>Candidate Engineer</span> 
+        <span>Türk Havacılık ve Uzay Sanayii A.Ş.</span>
+      </div>
+      <div className="item" style={{display:"flex",justifyContent:"space-between"}} >
+        <span>Software Developer</span> 
+        <span>Kapsül Teknoloji Platformu</span>
+      </div>
+      <div className="item" style={{display:"flex",justifyContent:"space-between" }} >
+        <span>Candidate Engineer</span> 
+        <span>Türk Havacılık ve Uzay Sanayii A.Ş.</span>
+      </div>
+      <div className="item" style={{display:"flex",justifyContent:"space-between"}} >
+        <span>Software Developer</span> 
+        <span>T.C. Ulaştırma ve Altyapı Bakanlığı</span>
+      </div>
+      <div className="item" style={{display:"flex",justifyContent:"space-between"}} >
+        <span>Software Developer</span> 
+        <span>Etiya Bilgi Teknolojileri</span>
+      </div>
+      <div className="item" style={{display:"flex",justifyContent:"space-between"}} >
+        <span>Part-time Developer</span> 
+        <span>Kapsül Teknoloji Platformu</span>
+      </div>
+    </div>
     </div>
   )
 }
