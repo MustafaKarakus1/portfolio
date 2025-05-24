@@ -35,7 +35,7 @@ const Experience = () => {
 
   return (
     <div>
-    <h1 style={{ textAlign:"center", color:"white"}} id='experience'>Experience</h1>
+    <h1 style={{ textAlign:"center", color:"white" ,fontSize:"2.5rem"}} id='experience'>Experience</h1>
     <div className="scroll-list__wrp" /*ref={scrollListRef}*/ >
       <div className="item" style={{display:"flex",justifyContent:"space-between"}} >
         <span>Candidate Engineer</span> 

@@ -32,20 +32,84 @@
 .home-overlay {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Dikey ortalama */
-    align-items: flex-end;   /* Sağa yasla */
+    justify-content: center; 
+    align-items: flex-end;   
     height: 100%;
     color: white;
-    padding-right: 5%; /* Sağdan boşluk */
+    padding-right: 8%; 
 }
 
 .home-card-text {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: right;
-    color: white;
-    margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  align-items: center;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  
 }
+
+.home-card-text > .static-text {
+  color: white;
+  white-space: nowrap;
+}
+
+.home-card-text > .animated-words {
+  position: relative;
+  height: 2.8rem;
+  overflow: hidden;
+  color: turquoise;
+  width: 15rem; /* genişlik veriyoruz hizalama için */
+  text-align: left;
+}
+
+.animated-words span {
+  position: absolute;
+  opacity: 0;
+  animation: animateWords 8s infinite;
+  left: 0;
+  width: 100%;
+}
+
+.animated-words span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-words span:nth-child(2) {
+  animation-delay: 2s;
+}
+.animated-words span:nth-child(3) {
+  animation-delay: 4s;
+}
+.animated-words span:nth-child(4) {
+  animation-delay: 6s;
+}
+
+@keyframes animateWords {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  35% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 .home-card-title {
     font-size: 2.5rem;
