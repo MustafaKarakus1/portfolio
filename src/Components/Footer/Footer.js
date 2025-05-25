@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <div className={`footer ${isVisible ? 'show' : ''}`} ref={footerRef} style={{marginTop:"10vh"}} id='contact'>
-      <h1 style={{fontSize:"2.5rem"}}>Contact <span style={{color:"turquoise"}}> MUSTAFA </span></h1>
+      <h1 style={{fontSize:"2.5rem"}}>Contact <span style={{color:"#6c757d"}}> MUSTAFA </span></h1>
       <h4>Get in touch with me</h4>
       <Button />
     </div>

@@ -1,4 +1,3 @@
-.App {
-  background: linear-gradient(to bottom, #16253a, #5aa6a6);
-
+.App { background: radial-gradient(ellipse 800px 600px at 50% 30%, rgba(255, 255, 255, 0.15) 0%, rgba(200, 200, 200, 0.08) 25%, rgba(150, 150, 150, 0.04) 50%, transparent 70%), 
+  linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 25%, #404040 50%, #2d2d2d 75%, #1a1a1a 100%); min-height: 100vh; 
 }

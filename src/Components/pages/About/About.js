@@ -14,7 +14,7 @@ const pdfDownload = () => {
 const About = () => {
   return (
     <div className='about' id='about'>
-        <h1 className='about-title'>About <span style={{color:"turquoise"}}>Me</span> </h1>
+        <h1 className='about-title'>About <span style={{color:"#6c757d"}}>Me</span> </h1>
         <img src={Mustafa} alt="Logo" className='about-logo' />
         <h2>Full Stack Developer</h2>
         <span className='about-paragraph'> Hello, I am Mustafa Karakuş. 

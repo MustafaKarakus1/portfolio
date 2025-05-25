@@ -3,6 +3,18 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 1vh;
+    animation: cardFadeGentle 2s ease-in-out 1s both;
+}
+
+@keyframes cardFadeGentle {
+    0% { 
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .card {
@@ -62,7 +74,7 @@
   position: relative;
   height: 2.8rem;
   overflow: hidden;
-  color: turquoise;
+  color: #6c757d;
   width: 12rem; 
   text-align: left;
 }
@@ -110,7 +122,6 @@
   }
 }
 
-
 .home-card-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -130,8 +141,8 @@
     }
 
     .home-overlay {
-        justify-content: center; /* Ortalanmış kalacak */
-        align-items: flex-end;   /* Sağda kalacak */
+        justify-content: center; 
+        align-items: flex-end;   
         padding-right: 8%;
     }
 
@@ -144,22 +155,22 @@
     }
 }
 
-/* Mobil için */
+
 @media (max-width: 480px) {
     .card-img {
         height: 100%;
     }
 
     .home-overlay {
-        justify-content: center; /* Dikey ortalanmış */
-        align-items: center;     /* Mobilde ortala */
+        justify-content: center; 
+        align-items: center;     
         padding-right: 0;
         padding: 0 5%;
     }
 
     .home-card-title,
     .home-card-text {
-        text-align: center; /* Mobilde ortala */
+        text-align: center; 
     }
 
     .home-card-text {

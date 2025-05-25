@@ -7,7 +7,7 @@
     color: white;
 }
 .download-cv-button{
-    background-color: #527895;
+    background-color: #6c757d;
     color: white;
     border: none;
     margin: 5vh;
@@ -31,22 +31,22 @@
     height: 40vh;
     border-radius: 50%;
     margin-bottom: 4vh;
-    box-shadow: 0 0 20px #5aa6a6,
-                0 0 40px #5aa6a6,
-                0 0 60px #5aa6a6;
+    box-shadow: 0 0 20px whitesmoke,
+                0 0 40px whitesmoke,
+                0 0 60px whitesmoke;
     animation: neonPulse 2s ease-in-out infinite alternate;
 }
 
 @keyframes neonPulse {
     from {
-        box-shadow: 0 0 20px #5aa6a6,
-                    0 0 40px #5aa6a6,
-                    0 0 50px #5aa6a6;
+        box-shadow: 0 0 20px whitesmoke,
+                    0 0 40px whitesmoke,
+                    0 0 50px whitesmoke;
     }
     to {
-        box-shadow: 0 0 10px #5aa6a6,
-                    0 0 20px #5aa6a6,
-                    0 0 30px #5aa6a6;
+        box-shadow: 0 0 10px whitesmoke,
+                    0 0 20px whitesmoke,
+                    0 0 30px whitesmoke;
     }
 }
 
