@@ -83,7 +83,7 @@
 .navbar-menu button {
   margin-top: 1vh;
   background-color: transparent;
-  color: #527895;
+  color: #6c757d;
   border: none;
   cursor: pointer;
   font-size: 20px;
@@ -93,10 +93,10 @@
 }
 
 .navbar-menu button:hover {
-  color: #1cebdd;
+  color: gray;
 }
 .navbar-menu button.active {
-  color: #1cebdd;
+  color: gray;
   font-weight: bold;
 }
 

@@ -17,7 +17,7 @@ const Education = () => {
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title">Software Engineering - TED University</h5>
+            <h5 className="card-title" style={{fontSize:"24px"}}>Software Engineering - TED University</h5>
             <p className="card-text" style={{marginTop:"2vh"}}>
             TED University Software Engineering Department aims to train innovative and 
             qualified software engineers who approach all processes from software design to 
